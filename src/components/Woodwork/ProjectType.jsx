@@ -1,12 +1,14 @@
-import DiningTable from '../../images/ww/dining_table_final.jpg'
-import projects from './projects'
-const ProjectType = ({type}) => {
+import Tile from './Tile'
+
+const ProjectType = ({type, projects}) => {
 
     return (
         <div>
-            <h1>{projects[type]["heading"]}</h1>
-            <section className='ww-tiles'>
-                
+            <h1 className='ww-project-header'>{type}</h1>
+            <section className='tiles'>
+                {projects.map(proj => (
+                    <Tile project={proj} />
+                ))}
                 {/* <li>coffee table</li>
                 <li>Kitchen workspace</li>
                 <li>bench</li>
