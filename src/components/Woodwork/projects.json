@@ -1,0 +1,106 @@
+{
+    "furniture": {
+        "heading": "Large Furniture",
+        "projects": [
+            {
+                "name": "Dining Table",
+                "materials": [
+                    "Walnut",
+                    "Cherry",
+                    "Steel Table Legs"
+                ]
+            },
+            {
+                "name": "Coffee Table",
+                "materials": [
+                    "Walnut",
+                    "Steel Table Legs"
+                ]
+            },
+            {
+                "name": "Kitchen Workspace",
+                "materials": [
+                    "Walnut",
+                    "Cherry"
+                ]
+            },
+            {
+                "name": "Bench",
+                "materials": [
+                    "Walnut"
+                ]
+            },
+            {
+                "name": "Coat Rack",
+                "materials": [
+                    "Walnut",
+                    "Cherry",
+                    "Coat Hooks"
+                ]
+            }
+            
+        ]
+    },
+    "office": {
+        "heading": "Home Office",
+        "projects": [
+            {
+                "name": "Desk",
+                "materials": [
+                    "Walnut",
+                    "Sit to Stand Base"
+                ]
+            },
+            {
+                "name": "Tall Monitor Stand",
+                "materials": [
+                    "Cherry"
+                ]
+            },
+            {
+                "name": "Short Monitor Stand",
+                "materials": [
+                    "Walnut",
+                    "Cherry"
+                ]
+            },
+            {
+                "name": "Phone Amplifier",
+                "materials": [
+                    "Walnut",
+                    "Cherry"
+                ]
+            }
+        ]
+    },
+    "decor": {
+        "heading": "Decor",
+        "projects": [
+            {
+                "name": "Vases",
+                "materials": [
+                    "Walnut",
+                    "Pine"
+                ]
+            },
+            {
+                "name": "Cheese Boards & Candle Holders",
+                "materials": [
+                    "Walnut",
+                    "Cherry",
+                    "Pine",
+                    "Scrapwood"
+                ]
+            },
+            {
+                "name": "Poster Frames",
+                "materials": [
+                    "Walnut",
+                    "Leather",
+                    "Wire",
+                    "Plexiglass"
+                ]
+            }
+        ]
+    }
+}

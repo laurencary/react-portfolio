@@ -1,0 +1,82 @@
+.live-link-icon {
+    height: 15px;
+    width: 15px;
+    color: white;
+    display: inline-block;
+}
+
+.project-links-container a:hover .live-link-icon {
+    color: #8493f2;
+}
+
+#skills {
+    margin-top: 1em;
+}
+
+.tech-list {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.project-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -5px;
+}
+
+.project-link {
+    margin-left: 5px;
+}
+
+.skill-icon {
+    font-size: 80px;
+    background-color: #f6f6f6;
+    padding: 9px;
+    border-radius: 0.25em;
+    margin: 10px;
+    display: inline-block;
+}
+
+.headshot {
+    height: 8em;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 0.5em;
+}
+
+.heading-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.heading-me-text {
+    margin: 0 0 5px 0.5em !important;
+
+}
+
+.heading-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+    height: 8em;
+    }
+
+.heading {
+    height: 8em;
+    margin-bottom: 2em;
+}
+
+.heading-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+.nav-link {
+    margin-right: 1em;
+}
