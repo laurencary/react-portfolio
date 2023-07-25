@@ -77,8 +77,12 @@
     /* height: 100%; */
 }
 
-.nav-link {
+.nav-link, .nav-link-selected {
     margin-right: 1em;
+}
+
+.nav-link-selected {
+    text-decoration: underline;
 }
 
 .ww-project-header {

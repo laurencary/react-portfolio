@@ -11,7 +11,7 @@ const Woodwork = () => {
     return (
         <>  
             <div id="wrapper">
-                <MenuIcon />
+                <MenuIcon isSwe={false} />
                 <Header />
                 <div id="main">
                     <div className="inner">
