@@ -7,7 +7,7 @@ const Projects = () => {
         <>
             <h1 id="projects" className="section-title">Projects</h1>
             <section className="tiles">
-                <article className="style1">
+                <article className="style1 lines">
                     <span className="image">
                         <img src={SlaqueSnap} alt="Slack Clone - Full stack project" />
                     </span>
@@ -28,7 +28,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </article>
-                <article className="style2">
+                <article className="style2 lines">
                     <span className="image">
                         <img src={WeatherSnap} alt="What Weather Where - Vanilla JS" />
                     </span>
@@ -51,7 +51,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </article>
-                <article className="style3">
+                <article className="style3 lines">
                     <span className="image">
                         <img src={RendezView} alt="MERN Stack - Group Project" />
                     </span>

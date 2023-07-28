@@ -28,15 +28,8 @@
             {
                 "name": "Bench",
                 "materials": [
-                    "Walnut"
-                ]
-            },
-            {
-                "name": "Coat Rack",
-                "materials": [
                     "Walnut",
-                    "Cherry",
-                    "Coat Hooks"
+                    "Pine Dowel"
                 ]
             }
             
