@@ -2,14 +2,19 @@ import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { Modal } from "../context/Modal";
 import EmailModal from "./EmailModal";
+import loading from '../images/loading.gif'
 
 const Contact = () => {
     const [userName, setUserName] = useState('')
+    const [modalName, setModalName] = useState('')
     const [userEmail, setUserEmail] = useState('')
+    const [modalEmail, setModalEmail] = useState('')
     const [userMessage, setUserMessage] = useState('')
+    const [modalMessage, setModalMessage] = useState('')
     const [blankFields, setBlankFields] = useState(["Name","Email", "Message"])
     const [showFormWarnings, setShowFormWarnings] = useState(false)
     const [showModal, setShowModal] = useState(false)
+    const [showLoading, setShowLoading] = useState(false)
     const form = useRef(); 
 
     const updateField = (field, value) => {
@@ -35,18 +40,23 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setShowLoading(true);
+        setModalName(userName);
+        setModalEmail(userEmail);
+        setModalMessage(userMessage);
+
+        emailjs.sendForm('service_ouhkqgg', 'template_toocd6o', form.current, 'LF6QObbCdwqlcuKNw')
+            .then((result) => {
+                setShowModal(true);
+                setShowLoading(false);
+            }, (error) => {
+                // show the user an error
+            });
 
         setUserEmail('')
         setUserName('')
         setUserMessage('')
         setBlankFields([])
-
-        emailjs.sendForm('service_ouhkqgg', 'template_toocd6o', form.current, 'LF6QObbCdwqlcuKNw')
-            .then((result) => {
-                setShowModal(true)
-            }, (error) => {
-                // show the user an error
-            });
     };
 
     return (
@@ -86,7 +96,8 @@ const Contact = () => {
                             </div>
                             <ul className="actions">
                                 <li onMouseEnter={() => setShowFormWarnings(true)} onMouseLeave={() => setShowFormWarnings(false)}> 
-                                    <input type="submit" value="Send" className={ blankFields.length > 0 ? "disabled": "primary"} />
+                                    {!showLoading && <input type="submit" value="Send" className={ blankFields.length > 0 ? "disabled": "primary"} />}
+                                    {showLoading && (<button className="primary loading-container"><img src={loading} alt="loading" /></button>)}
                                     <span className={showFormWarnings ? "form-warnings" : "hidden"}>
                                         { blankFields.length > 0 ? `Please fill out the following field(s): ${blankFields.join(", ")}` : '' }
                                     </span>
@@ -107,7 +118,6 @@ const Contact = () => {
                         <ul className="actions">
                             <li><a href="https://drive.google.com/file/d/1_ziLgB-rrkys2G39o_lqeqOXmXz6o20-/view?usp=sharing" target="_blank" rel="noreferrer"className="button primary resume-button">{`Resume `} 
                                 <i className="fa-solid fa-up-right-from-square live-link-icon"></i>
-                                {/* <img className="live-link-icon" src="images/up-right-from-square-solid.svg" alt="Open Live Website" /> */}
                             </a></li>
                         </ul>
                     </section>
@@ -120,9 +130,9 @@ const Contact = () => {
                 <Modal onClose={() => setShowModal(false)}>
                     <EmailModal 
                         setShow={setShowModal}
-                        email={userEmail}
-                        name={userName}
-                        message={userMessage}
+                        email={modalEmail}
+                        name={modalName}
+                        message={modalMessage}
                     />
                 </Modal>
             )}

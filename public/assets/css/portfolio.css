@@ -98,3 +98,8 @@
     color: rgb(218, 73, 92);
     margin-left: 1em;
 }
+
+.loading-container img {
+    height: 100%;
+    padding: 1em;
+}

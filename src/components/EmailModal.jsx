@@ -1,5 +1,6 @@
 import { FiX } from 'react-icons/fi'
 const EmailModal = ({ email, name, message, setShow }) => {
+    console.log(email);
     return (
         <div className="modal-container">
             <header className='modal-header'>
@@ -9,10 +10,8 @@ const EmailModal = ({ email, name, message, setShow }) => {
             <p className='modal-p'>The following message was sent to Lauren:</p>
             <hr className='modal-hr'></hr>
             <div>
-                <p><strong>{name}</strong>{` <${email}>`}</p>
-                {/* <p>From: <strong>Austin Cary</strong>{`  <${"afbcary@gmail.com"}>`}</p> */}
-                <p>{message}</p>
-                {/* <p className='modal-message'>What's up babe? Looking good!</p> */}
+                <p>From: <strong>{name}</strong>{` <${email}>`}</p>
+                <p className='modal-message'>{message}</p>
             </div>
         </div>
     )

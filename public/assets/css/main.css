@@ -2100,7 +2100,7 @@ input, select, textarea {
 
 	form {
 		margin: 0 0 2em 0;
-		overflow-x: hidden;
+		/* overflow-x: hidden; */
 	}
 
 		form > :last-child {
