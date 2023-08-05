@@ -49,14 +49,14 @@ const Contact = () => {
             .then((result) => {
                 setShowModal(true);
                 setShowLoading(false);
+                setUserEmail('');
+                setUserName('');
+                setUserMessage('');
+                setShowFormWarnings(false);
+                setBlankFields(["Name", "Email", "Message"]);
             }, (error) => {
                 // show the user an error
-            });
-
-        setUserEmail('')
-        setUserName('')
-        setUserMessage('')
-        setBlankFields([])
+            });        
     };
 
     return (
@@ -106,7 +106,7 @@ const Contact = () => {
                         </form>
                     </section> 
                     <section id="connect">
-                        <h2>Contact</h2>
+                        <h2>Connect</h2>
                         <ul className="icons">
                             <li><a href="https://github.com/laurencary" target="_blank" rel="noreferrer"className="icon brands style2 fa-github"><span className="label">GitHub</span></a></li>
                             <li><a href="https://www.linkedin.com/in/laurengcary/" target="_blank" rel="noreferrer"className="icon brands style2 fa-linkedin"><span className="label">LinkedIn</span></a></li>

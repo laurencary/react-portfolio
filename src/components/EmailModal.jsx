@@ -1,6 +1,6 @@
 import { FiX } from 'react-icons/fi'
+
 const EmailModal = ({ email, name, message, setShow }) => {
-    console.log(email);
     return (
         <div className="modal-container">
             <header className='modal-header'>
