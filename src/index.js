@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { ModalProvider } from "./context/Modal";
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -8,9 +8,9 @@ import App from './App';
 function Root() {
   return (
     <ModalProvider>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </ModalProvider>
   );
 }
