@@ -17,7 +17,7 @@ const Menu = ({isSwe}) => {
                             <li><a href="#decor">Decor</a></li>
                         </>
                     }
-                    <li><a href="#connect">Contact</a></li>
+                    <li><a href="#connect">Connect</a></li>
                 </ul>
             </div>
             <a className="close" href="#menu">Close</a>

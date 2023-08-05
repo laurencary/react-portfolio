@@ -16,7 +16,7 @@ const About = () => {
 
                 <br /><br />
                 Now, I'm so excited to call myself a software engineer. Some of my favorite tools and languages include React, Redux,
-                Ruby on Rails, SQL, and Python. I'm currently looking for a job where I can make an impact, continue learning and
+                Ruby on Rails, JavaScript, SQL, and Python. I'm currently looking for a job where I can make an impact, continue learning and
                 refining my skills, and work alongside passionate and motivated people.
 
             </p>

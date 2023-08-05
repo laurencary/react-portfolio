@@ -2910,7 +2910,7 @@ input, select, textarea {
 			position: fixed;
 			right: 1em;
 			top: 1em;
-			z-index: 10000;
+			z-index: 5;
 		}
 
 			#header nav ul {
