@@ -12,6 +12,9 @@ function App() {
       <Route path='/woodworker'>
         <Woodwork />
       </Route>
+      <Route path='/'>
+        <Software />
+      </Route>
       <Redirect to='/swe' />
     </Switch>
   );
