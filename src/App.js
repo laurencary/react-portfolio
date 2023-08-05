@@ -6,6 +6,9 @@ import Woodwork from "./components/Woodwork";
 function App() {
   return (
     <Switch>
+      <Route path="/">
+        <Software />
+      </Route>
       <Route path="/swe">
         <Software />
       </Route>
