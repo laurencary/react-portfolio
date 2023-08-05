@@ -40,23 +40,25 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        setShowLoading(true);
-        setModalName(userName);
-        setModalEmail(userEmail);
-        setModalMessage(userMessage);
+        if (blankFields.length === 0) {
+            setShowLoading(true);
+            setModalName(userName);
+            setModalEmail(userEmail);
+            setModalMessage(userMessage);
 
-        emailjs.sendForm('service_ouhkqgg', 'template_toocd6o', form.current, 'LF6QObbCdwqlcuKNw')
-            .then((result) => {
-                setShowModal(true);
-                setShowLoading(false);
-                setUserEmail('');
-                setUserName('');
-                setUserMessage('');
-                setShowFormWarnings(false);
-                setBlankFields(["Name", "Email", "Message"]);
-            }, (error) => {
-                // show the user an error
-            });        
+            emailjs.sendForm('service_ouhkqgg', 'template_toocd6o', form.current, 'LF6QObbCdwqlcuKNw')
+                .then((result) => {
+                    setShowModal(true);
+                    setShowLoading(false);
+                    setUserEmail('');
+                    setUserName('');
+                    setUserMessage('');
+                    setShowFormWarnings(false);
+                    setBlankFields(["Name", "Email", "Message"]);
+                }, (error) => {
+                    // show the user an error
+                });        
+        }
     };
 
     return (
