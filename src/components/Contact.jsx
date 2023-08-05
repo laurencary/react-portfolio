@@ -1,26 +1,92 @@
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+    const [userName, setUserName] = useState('')
+    const [userEmail, setUserEmail] = useState('')
+    const [userMessage, setUserMessage] = useState('')
+    const [blankFields, setBlankFields] = useState(["Name","Email", "Message"])
+    const [showFormWarnings, setShowFormWarnings] = useState(false)
+    const form = useRef(); 
+
+    const updateField = (field, value) => {
+        if (value === '') {
+            setBlankFields(prevState => [...prevState, field])
+        } else if (field) {
+            setBlankFields(prevState => prevState.filter(item => item !== field))
+        }
+        switch (field) {
+            case "Name":
+                setUserName(value);
+                break
+            case "Email":
+                setUserEmail(value);
+                break
+            case "Message":
+                setUserMessage(value);
+        }
+    }
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        setUserEmail('')
+        setUserName('')
+        setUserMessage('')
+        setBlankFields([])
+
+        emailjs.sendForm('service_ouhkqgg', 'template_toocd6o', form.current, 'LF6QObbCdwqlcuKNw')
+            .then((result) => {
+                // show the user a success message
+            }, (error) => {
+                // show the user an error
+            });
+    };
+
     return (
         <footer id="footer">
             <div className="inner">
-                {/* <section>
+                <section>
                     <h2>Get in touch</h2>
-                    <form method="post" action="#">
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="fields">
                         <div className="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" />
+                            <input 
+                                type="text" 
+                                name="user_name" 
+                                id="name" 
+                                placeholder="Name *" 
+                                value={userName} 
+                                onChange={(e) => updateField("Name", e.target.value)} />
                         </div>
                         <div className="field half">
-                            <input type="email" name="email" id="email" placeholder="Email" />
+                            <input 
+                                type="email" 
+                                name="user_email" 
+                                id="email" 
+                                placeholder="Email *" 
+                                value={userEmail} 
+                                    onChange={(e) => updateField("Email", e.target.value)}/>
                         </div>
                         <div className="field">
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <textarea 
+                                name="message" 
+                                id="message" 
+                                placeholder="Message *" 
+                                value={userMessage} 
+                                    onChange={(e) => updateField("Message", e.target.value)}></textarea>
                         </div>
                         </div>
                         <ul className="actions">
-                            <li><input type="submit" value="Send" className="primary" /></li>
+                            <li onMouseEnter={() => setShowFormWarnings(true)} onMouseLeave={() => setShowFormWarnings(false)}> 
+                                <input type="submit" value="Send" className={ blankFields.length > 0 ? "disabled": "primary"} />
+                                <span className={showFormWarnings ? "form-warnings" : "hidden"}>
+                                    { blankFields.length > 0 ? `Please fill out the following field(s): ${blankFields.join(", ")}` : '' }
+                                </span>
+                            </li>
                         </ul>
                     </form>
-                  </section>  */}
+                </section> 
                 <section id="connect">
                     <h2>Contact</h2>
                     <ul className="icons">
@@ -32,7 +98,7 @@ const Contact = () => {
                         Email: armstronglg720@gmail.com<br />
                         Phone: (262) 945-5851</p>
                     <ul className="actions">
-                        <li><a href="https://drive.google.com/file/d/1_ziLgB-rrkys2G39o_lqeqOXmXz6o20-/view?usp=sharing" target="_blank" rel="noreferrer"className="button primary">Resume 
+                        <li><a href="https://drive.google.com/file/d/1_ziLgB-rrkys2G39o_lqeqOXmXz6o20-/view?usp=sharing" target="_blank" rel="noreferrer"className="button primary resume-button">{`Resume `} 
                             <i className="fa-solid fa-up-right-from-square live-link-icon"></i>
                             {/* <img className="live-link-icon" src="images/up-right-from-square-solid.svg" alt="Open Live Website" /> */}
                         </a></li>

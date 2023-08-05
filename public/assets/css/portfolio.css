@@ -88,3 +88,13 @@
 .ww-project-header {
     margin-top: 1em;
 }
+
+
+.resume-button {
+    margin-top: 1.5em;
+} 
+
+.form-warnings {
+    color: rgb(218, 73, 92);
+    margin-left: 1em;
+}
