@@ -11,7 +11,7 @@ const About = () => {
                 and automate workflows for myself and teammates made me realize
                 that what I really wanted to be doing was developing software.
                 Throughout my time as an actuary and data analyst, I used SQL
-                and python daily. Knowing how important having a solid conception foundation
+                and Python daily. Knowing how important having a solid conception foundation
                 for computer science would be, I enrolled in App Academy.
 
                 <br /><br />
