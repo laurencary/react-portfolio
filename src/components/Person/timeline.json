@@ -1,0 +1,23 @@
+{
+    "Career": [
+        {
+            "title": "Full Stack Engineer",
+            "company": "Green Neighborhood Challenge",
+            "startDate": "8/8/2023",
+            "description": "Assist with backend and front end development projects"
+            
+        },
+        {
+            "title": "Senior Insurance Product Analyst",
+            "company": "Clearcover",
+            "startDate": "10/4/2021",
+            "endDate": "1/27/2023",
+            "description": "Assist with backend and front end development projects",
+            "responsibilities": [
+                "Developed extension of exposures tool in Python using Pandas to calculate target rate level for insurance premiums with over 99% accuracy, gathering policyholder data from AWS Snowflake and implementing the rating algorithm.",
+                "Formalized AWS Snowflake data warehouse output of exposed rating JSONs to ensure capture of every element with appropriate granularity, providing product management with access to all rating variables.",
+                "Created extensive unit tests for the software engineering team to ensure the auto product is calculating premiums correctly, and new features are being programmed accurately."
+            ]
+        }
+    ]
+}
