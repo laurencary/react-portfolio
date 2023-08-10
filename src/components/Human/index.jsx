@@ -2,6 +2,7 @@ import MenuIcon from '../MenuIcon';
 import Header from '../Header';
 import Footer from '../Contact';
 import Menu from '../Menu';
+import Timeline from './Timeline';
 
 const Human = () => {
     return (
@@ -11,7 +12,7 @@ const Human = () => {
                 <Header page="human"/>
                 <div id="main">
                     <div className="inner">
-
+                        <Timeline />
                     </div>
                 </div>
                 <Footer />
