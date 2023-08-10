@@ -11,9 +11,7 @@ const Person = () => {
                 <Header />
                 <div id="main">
                     <div className="inner">
-                        <About />
-                        <Projects />
-                        <Skills />
+
                     </div>
                 </div>
                 <Footer />

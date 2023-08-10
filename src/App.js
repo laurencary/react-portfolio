@@ -1,6 +1,7 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 import Software from './components/Software';
 import Woodwork from "./components/Woodwork";
+import Person from "./components/Person";
 
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
       </Route>
       <Route path='/woodworker'>
         <Woodwork />
+      </Route>
+      <Route path='/person'>
+        <Person />
       </Route>
       <Route path='/'>
         <Software />
