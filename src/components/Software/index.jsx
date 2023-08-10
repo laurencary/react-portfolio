@@ -10,7 +10,7 @@ const Software = () => {
     return (
         <>
             <div id="wrapper">
-                <MenuIcon isSwe={true} />
+                <MenuIcon page="swe" />
                 <Header />
                 <div id="main">
                     <div className="inner">
@@ -21,7 +21,7 @@ const Software = () => {
                 </div>
                 <Footer />
             </div>
-            <Menu isSwe={"swe"}/>
+            <Menu page={"swe"}/>
         </>
     )
 }

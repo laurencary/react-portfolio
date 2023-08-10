@@ -11,7 +11,7 @@ const Woodwork = () => {
     return (
         <>  
             <div id="wrapper">
-                <MenuIcon isSwe={false} />
+                <MenuIcon page="woodwork" />
                 <Header />
                 <div id="main">
                     <div className="inner">
@@ -30,7 +30,7 @@ const Woodwork = () => {
                 </div>
                 <Footer />
             </div >
-            <Menu isSwe={"woodwork"} />
+            <Menu page={"woodwork"} />
         </>
     )
 }
