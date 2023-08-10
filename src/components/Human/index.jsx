@@ -3,12 +3,12 @@ import Header from '../Header';
 import Footer from '../Contact';
 import Menu from '../Menu';
 
-const Person = () => {
+const Human = () => {
     return (
         <>
             <div id="wrapper">
-                <MenuIcon page="swe" />
-                <Header />
+                <MenuIcon page="human" />
+                <Header page="human"/>
                 <div id="main">
                     <div className="inner">
 
@@ -16,9 +16,9 @@ const Person = () => {
                 </div>
                 <Footer />
             </div>
-            <Menu page={"swe"} />
+            <Menu page={"human"} />
         </>
     )
 }
 
-export default Person
+export default Human

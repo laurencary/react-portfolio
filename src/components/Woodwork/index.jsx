@@ -12,7 +12,7 @@ const Woodwork = () => {
         <>  
             <div id="wrapper">
                 <MenuIcon page="woodwork" />
-                <Header />
+                <Header page="woodwork" />
                 <div id="main">
                     <div className="inner">
                         <About />

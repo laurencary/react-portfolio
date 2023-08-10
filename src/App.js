@@ -1,7 +1,7 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 import Software from './components/Software';
 import Woodwork from "./components/Woodwork";
-import Person from "./components/Person";
+import Human from "./components/Human";
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Route path='/woodworker'>
         <Woodwork />
       </Route>
-      <Route path='/person'>
-        <Person />
+      <Route path='/human'>
+        <Human />
       </Route>
       <Route path='/'>
         <Software />

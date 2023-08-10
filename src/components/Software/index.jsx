@@ -11,7 +11,7 @@ const Software = () => {
         <>
             <div id="wrapper">
                 <MenuIcon page="swe" />
-                <Header />
+                <Header page="swe" />
                 <div id="main">
                     <div className="inner">
                         <About />
