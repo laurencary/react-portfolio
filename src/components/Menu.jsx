@@ -1,22 +1,31 @@
-const Menu = ({isSwe}) => {
+const Menu = ({page}) => {
+
+    const menuSections = {
+        "human": [
+            { "id":"professional", "title": "Professional Experience" },
+            { "id":"education", "title": "Postsecondary Education" }
+        ],
+        "swe": [
+            { "id": "about", "title": "About" },
+            { "id": "projects", "title": "Projects" },
+            { "id": "skills", "title": "Skills" }
+        ],
+        "woodwork":[
+            { "id": "about", "title": "About" },
+            { "id": "furniture", "title": "Large Furniture" },
+            { "id": "office", "title": "Home Office" },
+            { "id": "decor", "title": "Decor" }
+        ]
+    }
 
     return (
         <nav id="menu">
             <div className="inner">
                 <h2>Menu</h2>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    {isSwe ?
-                        <>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#skills">Skills</a></li> 
-                        </> : 
-                        <>
-                            <li><a href="#furniture">Large Furniture</a></li>
-                            <li><a href="#office">Home Office</a></li>
-                            <li><a href="#decor">Decor</a></li>
-                        </>
-                    }
+                    {menuSections[page].map((item) => (
+                        <li><a href={`#${item.id}`}>{item.title}</a></li>
+                    ))}
                     <li><a href="#connect">Contact</a></li>
                 </ul>
             </div>

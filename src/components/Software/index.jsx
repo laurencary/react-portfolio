@@ -21,7 +21,7 @@ const Software = () => {
                 </div>
                 <Footer />
             </div>
-            <Menu isSwe={true}/>
+            <Menu isSwe={"swe"}/>
         </>
     )
 }

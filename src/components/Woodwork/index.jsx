@@ -30,7 +30,7 @@ const Woodwork = () => {
                 </div>
                 <Footer />
             </div >
-            <Menu isSwe={false} />
+            <Menu isSwe={"woodwork"} />
         </>
     )
 }
