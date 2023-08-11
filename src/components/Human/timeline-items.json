@@ -1,23 +1,99 @@
 {
     "Career": [
+        {"Software Engineer": [
+                {
+                    "title": "Full Stack Engineer - Pro Bono",
+                    "company": "Green Neighborhood Challenge",
+                    "startDate": "8/8/2023",
+                    "description": "Assist with backend and front end development projects"
+                }
+                
+            ],
+        "Analyst": [
+                {
+                    "title": "Senior Insurance Product Analyst",
+                    "company": "Clearcover",
+                    "startDate": "10/4/2021",
+                    "endDate": "1/27/2023",
+                    "description": "Assist with backend and front end development projects",
+                    "responsibilities": [
+                        "Developed extension of exposures tool in Python using Pandas to calculate target rate level for insurance premiums with over 99% accuracy, gathering policyholder data from AWS Snowflake and implementing the rating algorithm.",
+                        "Formalized AWS Snowflake data warehouse output of exposed rating JSONs to ensure capture of every element with appropriate granularity, providing product management with access to all rating variables.",
+                        "Created extensive unit tests for the software engineering team to ensure the auto product is calculating premiums correctly, and new features are being programmed accurately."
+                    ]
+                },
+                {
+                    "title": "Medical Economics Consultant I",
+                    "company": "Magellan Health",
+                    "startDate": "1/1/2021",
+                    "endDate": "9/1/2021",
+                    "description": "Assist with backend and front end development projects",
+                    "responsibilities": [
+                        "Leveraged Excel, SQL, and QlikView to manipulate data and produce data visualizations for monthly executive trend reviews, helping clinical team members understand utilization and cost trends on the behavioral health book of business."
+                    ]
+                },
+                {
+                    "title": "Business Analytics Analyst III",
+                    "company": "American Family Insurance",
+                    "startDate": "10/1/2019",
+                    "endDate": "12/1/2020",
+                    "description": "Assist with backend and front end development projects",
+                    "responsibilities": [
+                        "Performed vendor and internal customer profiling customer data; programmed data pipelines using SQL and Python across multiple systems allow for streamlined access to data for reporting",
+                        "Contributed to cost savings of 10% by building and maintaining weekly executive report for major partner launch"
+                    ]
+                }
+            ],
+        "Actuary": [
+            {
+                "title": "Actuarial Senior Analyst",
+                "company": "American Family Insurance",
+                "startDate": "10/1/2019",
+                "endDate": "12/1/2020",
+                "description": "Assist with backend and front end development projects",
+                "responsibilities": [
+                    "Performed vendor and internal customer profiling customer data; programmed data pipelines using SQL and Python across multiple systems allow for streamlined access to data for reporting",
+                    "Contributed to cost savings of 10% by building and maintaining weekly executive report for major partner launch"
+                ]
+            },
+            {
+                "title": "Actuarial Analyst",
+                "company": "Dean Health Plan",
+                "startDate": "3/1/2016",
+                "endDate": "8/1/2017",
+                "description": "Assist with backend and front end development projects",
+                "responsibilities": [
+                    "Performed vendor and internal customer profiling customer data; programmed data pipelines using SQL and Python across multiple systems allow for streamlined access to data for reporting",
+                    "Contributed to cost savings of 10% by building and maintaining weekly executive report for major partner launch"
+                ]
+            },
+            {
+                "title": "Actuarial Analyst - Contractor",
+                "company": "American Family Insurance (through Spherion)",
+                "startDate": "10/1/2019",
+                "endDate": "12/1/2020",
+                "description": "Assist with backend and front end development projects",
+                "responsibilities": [
+                    "Performed vendor and internal customer profiling customer data; programmed data pipelines using SQL and Python across multiple systems allow for streamlined access to data for reporting",
+                    "Contributed to cost savings of 10% by building and maintaining weekly executive report for major partner launch"
+                ]
+            },
+            {
+                "title": "Actuarial Analyst Intern",
+                "company": "American Association of Insurance Services",
+                "startDate": "5/1/2015",
+                "endDate": "9/1/2015",
+                "description": "Assist with backend and front end development projects",
+                "responsibilities": [
+                    "Performed vendor and internal customer profiling customer data; programmed data pipelines using SQL and Python across multiple systems allow for streamlined access to data for reporting",
+                    "Contributed to cost savings of 10% by building and maintaining weekly executive report for major partner launch"
+                ]
+            }
+        ]}
+    ],
+    "Postsecondary Education": [
         {
-            "title": "Full Stack Engineer - Pro Bono",
-            "company": "Green Neighborhood Challenge",
-            "startDate": "8/8/2023",
-            "description": "Assist with backend and front end development projects"
-            
-        },
-        {
-            "title": "Senior Insurance Product Analyst",
-            "company": "Clearcover",
-            "startDate": "10/4/2021",
-            "endDate": "1/27/2023",
-            "description": "Assist with backend and front end development projects",
-            "responsibilities": [
-                "Developed extension of exposures tool in Python using Pandas to calculate target rate level for insurance premiums with over 99% accuracy, gathering policyholder data from AWS Snowflake and implementing the rating algorithm.",
-                "Formalized AWS Snowflake data warehouse output of exposed rating JSONs to ensure capture of every element with appropriate granularity, providing product management with access to all rating variables.",
-                "Created extensive unit tests for the software engineering team to ensure the auto product is calculating premiums correctly, and new features are being programmed accurately."
-            ]
+            "degree": "Actuarial Science Certificate"
         }
     ]
 }

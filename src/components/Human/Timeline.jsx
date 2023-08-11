@@ -1,6 +1,12 @@
+import Chapter from './Chapter';
+import TimelineData from './timeline-items'
+
+
 const Timeline = () => {
+
     return (
         <div>
+            <Chapter title="Career" id="career" items={TimelineData["Career"]} />
             <h1>Career</h1>
             <div>
                 <h2>2023 Software Engineer</h2>
@@ -10,7 +16,7 @@ const Timeline = () => {
                 <h2>2015 Passed P</h2>
                 <h2>2015 Actuary</h2>
             </div>
-            <h1>College</h1>
+            <h1>Post</h1>
             <div>
                 <h2>Saxophone Performance</h2>
                 <h2>Biochemistry</h2>

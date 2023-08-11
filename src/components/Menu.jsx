@@ -2,7 +2,7 @@ const Menu = ({page}) => {
 
     const menuSections = {
         "human": [
-            { "id":"professional", "title": "Professional Experience" },
+            { "id":"professional", "title": "Career" },
             { "id":"education", "title": "Postsecondary Education" }
         ],
         "swe": [
@@ -24,7 +24,7 @@ const Menu = ({page}) => {
                 <h2>Menu</h2>
                 <ul>
                     {menuSections[page].map((item) => (
-                        <li><a href={`#${item.id}`}>{item.title}</a></li>
+                        <li key={`menu-${page}-${item.id}`}><a href={`#${item.id}`}>{item.title}</a></li>
                     ))}
                     <li><a href="#connect">Contact</a></li>
                 </ul>
