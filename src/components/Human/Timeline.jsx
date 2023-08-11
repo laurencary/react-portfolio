@@ -1,13 +1,12 @@
-import Chapter from './Chapter';
-import TimelineData from './timeline-items'
-
+import Season from './Season';
 
 const Timeline = () => {
 
     return (
         <div>
-            <Chapter title="Career" id="career" items={TimelineData["Career"]} />
-            <h1>Career</h1>
+            <Season season="Career" tag="career"/>
+            <Season season="Postsecondary Education" tag="education"/>
+            <Season season="Childhood" tag="childhood"/>
             <div>
                 <h2>2023 Software Engineer</h2>
                 <h2>2019 Analyst</h2>
