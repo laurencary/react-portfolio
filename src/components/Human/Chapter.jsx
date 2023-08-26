@@ -1,3 +1,4 @@
+import CareerItem from './CareerItem';
 import CareerItems from './career.json'
 
 const Chapter = ({ title, season }) => {
@@ -10,12 +11,11 @@ const Chapter = ({ title, season }) => {
         items = []
     }
 
-    console.log(items);
     return (
         <div>
             <h2>{title}</h2>
-            {items.map((item) => (
-                <h3>{item.title}</h3>
+            {season === "Career" && items.map((item) => (
+                <CareerItem item={item} />
             ))}
         </div>
     )

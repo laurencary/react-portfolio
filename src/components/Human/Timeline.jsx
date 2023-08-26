@@ -7,7 +7,7 @@ const Timeline = () => {
             <Season season="Career" tag="career"/>
             <Season season="Postsecondary Education" tag="education"/>
             <Season season="Childhood" tag="childhood"/>
-            <div>
+            {/* <div>
                 <h2>2023 Software Engineer</h2>
                 <h2>2019 Analyst</h2>
                 <h2>2015 Actuary</h2>
@@ -26,7 +26,7 @@ const Timeline = () => {
                 <h2>Music</h2>
                 <h2>Math</h2>
                 <h3>2010 AP Calc teacher told me about actuarial science</h3>
-            </div>
+            </div> */}
         </div>
     )
 }

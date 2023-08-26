@@ -20,7 +20,7 @@ const Tile = ({project}) => {
     return (
         <article className='no-lines'>
             <span className="image">
-                <img src={photo} alt="dining table" />
+                <img src={photo} alt={project.name} />
             </span>
             <div className="tile-text">
                 <div className="content">
