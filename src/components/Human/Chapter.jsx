@@ -15,7 +15,7 @@ const Chapter = ({ title, season }) => {
         <div>
             <h2>{title}</h2>
             {season === "Career" && items.map((item) => (
-                <CareerItem item={item} />
+                <CareerItem key={`career-${item.title}`} item={item} />
             ))}
         </div>
     )

@@ -19,7 +19,7 @@ const Season = ({ season, tag }) => {
         <div>
             <h1 id={tag}>{season}</h1>
             {chapters.map(item => (
-                <Chapter title={item} season={season}/>
+                <Chapter key={`season-${item}`} title={item} season={season}/>
             ))}
         </div>
     )
