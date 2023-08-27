@@ -36,7 +36,7 @@ const Projects = () => {
                         <h2>What Weather Where</h2>
                         <div className="content">
                             <p className="tech-list">
-                                <strong>JS | Chart.js</strong>
+                                <strong>JS | Chart.js | HTML | CSS</strong>
                             </p>
                             <p>A historical weather metrics dashboard using Open-Mateo APIs to
                                 fetch weather data for multiple locations in vanilla JavaScript.
