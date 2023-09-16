@@ -118,7 +118,7 @@ const Contact = () => {
                             Email: armstronglg720@gmail.com<br />
                             Phone: (262) 945-5851</p>
                         <ul className="actions">
-                            <li><a href="https://drive.google.com/file/d/1eoThH2lixD10RsKopcR_km02V1it29IS/view?usp=sharing" target="_blank" rel="noreferrer"className="button primary resume-button">{`Resume `} 
+                            <li><a href="https://drive.google.com/file/d/14zLywgKoV96ZSSQA8Ite-vkPhO11TOsL/view?usp=sharing" target="_blank" rel="noreferrer"className="button primary resume-button">{`Resume `} 
                                 <i className="fa-solid fa-up-right-from-square live-link-icon"></i>
                             </a></li>
                         </ul>
