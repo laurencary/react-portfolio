@@ -115,7 +115,7 @@ const Contact = () => {
                             <li><a href="https://wellfound.com/u/lauren-cary-3" target="_blank" rel="noreferrer"className="icon brands style2 fa-angellist"><span className="label">500px</span></a></li>
                         </ul>
                         <p>
-                            Email: armstronglg720@gmail.com<br />
+                            Email: laurengcary@gmail.com<br />
                             Phone: (262) 945-5851</p>
                         <ul className="actions">
                             <li><a href="https://drive.google.com/file/d/14zLywgKoV96ZSSQA8Ite-vkPhO11TOsL/view?usp=sharing" target="_blank" rel="noreferrer"className="button primary resume-button">{`Resume `} 
