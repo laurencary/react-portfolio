@@ -1,23 +1,22 @@
 const About = () => {
     return (
         <header id="about">
-            <p>The first time I was described as a go getter, I was shocked.
-                But that was because I was thinking of the type of person who
-                has the ambition of gaining influence and prestige. For me,
-                my drive comes from curiousity, determination, and the joy of learning. I aim
-                to understand, reflect, refine and master.
-                <br /><br />
-                I started my career as an actuary. My passion to build tools,
-                and automate workflows for myself and teammates made me realize
-                that what I really wanted to be doing was developing software.
-                Throughout my time as an actuary and data analyst, I used SQL
-                and Python daily. Knowing how important having a solid conception foundation
-                for computer science would be, I enrolled in App Academy.
+            <p>Having worked as an Actuary and Data Analyst for the first eight years of my career, 
+                I have a solid foundation in math, statistics, and working with large, complicated
+                datasets. During that time, I built a lot of internal tools for myself, coworkers,
+                and even directors, using Python, SQL, and even Visual Basic (should I even admit that?).  
+                I loved the puzzle of understanding the workflows, integrating all the components, 
+                systematically connecting them for a seamless experience, and making it look good along 
+                the way. Multiple times I was recognized for my impact, from receiving employee of the 
+                month, to one of my coworkers telling me he wanted me to build all of the tools the 
+                actuaries used. I knew I wanted to become a software engineer because of how exhilarating 
+                the whole process was for me.
+
 
                 <br /><br />
                 Some of my favorite tools and languages include React, Redux,
-                Ruby on Rails, JavaScript, SQL, and Python. I'm currently looking for a job where I can make an impact, continue learning and
-                refining my skills, and work alongside passionate and motivated people. 
+                Ruby on Rails, JavaScript, SQL, and Python. I'm currently looking for a job where
+                I can make an impact, continue learning and refining my skills, and work alongside passionate and motivated people. 
 
             </p>
         </header>
