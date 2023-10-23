@@ -30,13 +30,22 @@
     margin-left: 5px;
 }
 
-.skill-icon {
+.skill-icon-container {
     font-size: 80px;
     background-color: #f6f6f6;
     padding: 9px;
     border-radius: 0.25em;
     margin: 10px;
     display: inline-block;
+    width: 98px;
+    height: 98px;
+    text-align: center;
+}
+
+.skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headshot {
