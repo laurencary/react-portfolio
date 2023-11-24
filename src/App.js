@@ -1,7 +1,7 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 import Software from './components/Software';
 import Woodwork from "./components/Woodwork";
-import Human from "./components/Human";
+// import Human from "./components/Human";
 
 
 function App() {
