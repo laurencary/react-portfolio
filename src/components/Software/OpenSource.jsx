@@ -1,7 +1,7 @@
 const OpenSource = () => {
     return (
         <div>
-            <h1>Open Source Contributions</h1>
+            <h2>Open Source Contributions</h2>
             
         </div>
     )

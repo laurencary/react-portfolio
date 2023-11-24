@@ -118,7 +118,7 @@ const Contact = () => {
                             Email: laurengcary@gmail.com<br />
                             Phone: (262) 945-5851</p>
                         <ul className="actions">
-                            <li><a href="https://drive.google.com/file/d/19dmEoFrXJFv7taYhdV1H5oc-0vAirVH-/view?usp=share_link" target="_blank" rel="noreferrer"className="button primary resume-button">{`Resume `} 
+                            <li><a href="https://drive.google.com/file/d/1W07PVqNUPruSXfbk7CNvrALKyM7zGYLP/view?usp=sharing" target="_blank" rel="noreferrer"className="button primary resume-button">{`Resume `} 
                                 <i className="fa-solid fa-up-right-from-square live-link-icon"></i>
                             </a></li>
                         </ul>

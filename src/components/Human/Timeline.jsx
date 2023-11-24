@@ -8,24 +8,24 @@ const Timeline = () => {
             <Season season="Postsecondary Education" tag="education"/>
             <Season season="Childhood" tag="childhood"/>
             {/* <div>
-                <h2>2023 Software Engineer</h2>
-                <h2>2019 Analyst</h2>
-                <h2>2015 Actuary</h2>
-                <h2>2015 Passed FM</h2>
-                <h2>2015 Passed P</h2>
-                <h2>2015 Actuary</h2>
+                <h3>2023 Software Engineer</h3>
+                <h3>2019 Analyst</h3>
+                <h3>2015 Actuary</h3>
+                <h3>2015 Passed FM</h3>
+                <h3>2015 Passed P</h3>
+                <h3>2015 Actuary</h3>
             </div>
-            <h1>Post</h1>
+            <h2>Post</h2>
             <div>
-                <h2>Saxophone Performance</h2>
-                <h2>Biochemistry</h2>
+                <h3>Saxophone Performance</h3>
+                <h3>Biochemistry</h3>
             </div>
-            <h1>Childhood</h1>
+            <h2>Childhood</h2>
             <div>
-                <h2>Swimming</h2>
-                <h2>Music</h2>
-                <h2>Math</h2>
-                <h3>2010 AP Calc teacher told me about actuarial science</h3>
+                <h3>Swimming</h3>
+                <h3>Music</h3>
+                <h3>Math</h3>
+                <h4>2010 AP Calc teacher told me about actuarial science</h4>
             </div> */}
         </div>
     )

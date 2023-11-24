@@ -1,11 +1,12 @@
 import SlaqueSnap from '../../images/swe/slaque.png'
 import WeatherSnap from '../../images/swe/what-weather-where.png'
 import RendezView from '../../images/swe/rendez-view.png'
+import GNCUtilities from '../../images/swe/gnc-utilities.png'
 
 const Projects = () => {
     return (
         <>
-            <h1 id="projects" className="section-title">Projects</h1>
+            <h1 id="projects" className="section-title">Projects & Volunteer Work</h1>
             <section className="tiles">
                 <article className="style1 lines">
                     <span className="image">
@@ -68,6 +69,27 @@ const Projects = () => {
                                 <a href="https://github.com/kennyvungo/smelk" target="_blank" rel="noreferrer"
                                     className="icon brands style2 fa-github project-link"><span className="label">GitHub</span></a>
                                 <a href="https://smelk.onrender.com/" target="_blank" rel="noreferrer" className="icon brands style2 project-link"><i
+                                    className="fa-solid fa-up-right-from-square live-link-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article className="style4 lines">
+                    <span className="image">
+                        <img src={GNCUtilities} alt="GNC Utilities - MERN stack" />
+                    </span>
+                    <div className="tile-text">
+                        <h2>GNC Researchers Hub</h2>
+                        <div className="content">
+                            <p className="tech-list">
+                                <strong>MongoDB | Express.js | React | Node.js | Material UI</strong>
+                            </p>
+                            <p>A website for the researchers at Green Neighbor 
+                                Challenge (non-profit) to view, filter, search, 
+                                and update data stored in MongoDB.
+                            </p>
+                            <div className="project-links-container">
+                                <a href="https://green-neighbor-researchers-hub.onrender.com/" target="_blank" rel="noreferrer" className="icon brands style2 project-link"><i
                                     className="fa-solid fa-up-right-from-square live-link-icon"></i></a>
                             </div>
                         </div>

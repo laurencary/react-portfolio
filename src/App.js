@@ -13,9 +13,9 @@ function App() {
       <Route path='/woodworker'>
         <Woodwork />
       </Route>
-      <Route path='/human'>
+      {/* <Route path='/human'>
         <Human />
-      </Route>
+      </Route> */}
       <Route path='/'>
         <Software />
       </Route>

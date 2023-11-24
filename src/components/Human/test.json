@@ -1,0 +1,46 @@
+{
+    "Professional": {
+        "Software Engineer": [
+            {
+                "type": "work",
+                "company": "Green Neighbor Challange",
+                "roles": [
+                    {
+                        "title": "Full Stack Engineer",
+                        "startDate": "8/8/2023",
+                        "description": "Assist with backend and front end development projects",
+                        "responsibilities": [
+                            "Facilitated seamless data management for researchers by developing a website to easily add and update data within MongoDB through a user-friendly interface, instead of Google Sheets, significantly enhancing data accessibility and usability.",
+                            "Implemented RESTful API endpoints to allow for reads and writes to MongoDB using Mongoose, Express.js, and Node.js.",
+                            "Developed the frontend to efficiently manage client side state using React hooks, Redux, and AJAX requests.",
+                            "Successfully deployed a user-friendly search functionality, complete with filter options, using the useSearchParams hook to ensure persistent query options within the URL, enhancing user experiences by making it easier for users to find and access utility data"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "work",
+                "company": "Scale AI",
+                "roles": [
+                    {
+                        "title": "Full Stack Engineer",
+                        "startDate": "8/8/2023",
+                        "description": "Assist with backend and front end development projects",
+                        "responsibilities": [
+                            "Developed extension of exposures tool in Python using Pandas to calculate target rate level for insurance premiums with over 99% accuracy, gathering policyholder data from AWS Snowflake and implementing the rating algorithm.",
+                            "Formalized AWS Snowflake data warehouse output of exposed rating JSONs to ensure capture of every element with appropriate granularity, providing product management with access to all rating variables.",
+                            "Created extensive unit tests for the software engineering team to ensure the auto product is calculating premiums correctly, and new features are being programmed accurately."
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "education",
+                "institution": "App Academy",
+                "startDate": "March 2023",
+                "endDate": "July 2023",
+                "description": "Full stack web development"
+            }
+        ]
+    }
+}

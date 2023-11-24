@@ -9,7 +9,7 @@ const MenuIcon = ({ page }) => {
                     <ul>
                         <li><NavLink className={page === "swe" ? "nav-link-selected" : "nav-link" } to="/swe">Software Engineer</NavLink></li>
                         <li><NavLink className={page === "woodwork" ? "nav-link-selected" : "nav-link"} to="/woodworker">Woodworker</NavLink></li>
-                        <li><NavLink className={page === "human" ? "nav-link-selected" : "nav-link"} to="/human">Human</NavLink></li>
+                        {/* <li><NavLink className={page === "human" ? "nav-link-selected" : "nav-link"} to="/human">Human</NavLink></li> */}
                         <li><a href="#menu">Menu</a></li>
                     </ul>
                 </nav>
