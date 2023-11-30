@@ -6,7 +6,8 @@ import GNCUtilities from '../../images/swe/gnc-utilities.png'
 const Projects = () => {
     return (
         <>
-            <h1 id="projects" className="section-title">Projects & Volunteer Work</h1>
+            <h1 id="projects" className="section-title">Projects</h1>
+            <h2>While attending App Academy</h2>
             <section className="tiles">
                 <article className="style1 lines">
                     <span className="image">
@@ -74,6 +75,10 @@ const Projects = () => {
                         </div>
                     </div>
                 </article>
+            </section>
+            <br></br>
+            <h2>Volunteer</h2>
+            <section className="tiles">
                 <article className="style4 lines">
                     <span className="image">
                         <img src={GNCUtilities} alt="GNC Utilities - MERN stack" />
@@ -95,7 +100,6 @@ const Projects = () => {
                         </div>
                     </div>
                 </article>
-
             </section>
         </>
     )
